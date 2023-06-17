@@ -1,15 +1,31 @@
+html {
+    scroll-behavior: smooth;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 1;
+    padding: 1;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+  }
 .carousel {
-  align-items: center;
-  background: #e3e3e3;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .slider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
+  height: 150px; /* Adjust the height to your desired value */
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -24,7 +40,7 @@
     rgba(255, 255, 255, 0) 100%
   );
   content: "";
-  height: 100px;
+  height: 50px; /* Adjust the height to match the slider height */
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -48,8 +64,15 @@
 }
 
 .slide {
-  height: 100px;
   width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  height: 50%; /* Set the image height to 100% to fit within the slide */
+  width: auto; /* Maintain the image's aspect ratio */
 }
 
 @keyframes scroll {
@@ -60,6 +83,7 @@
     transform: translateX(calc(-250px * 7));
   }
 }
+
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -88,3 +112,28 @@
   background-color: #04AA6D;
   color: white;
 }
+#contact {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
